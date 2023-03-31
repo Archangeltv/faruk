@@ -27,7 +27,7 @@ const Data = (props) => {
 
 export const Second = () => {
   return (
-    <div className="grid grid-cols-3 items-center py-10 text-center">
+    <div className="grid grid-cols-3 items-center justify-center py-10 text-center">
       {datas.map((data) => {
         return <Data key={data.id} number={data.number} text={data.text} />;
       })}
