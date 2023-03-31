@@ -7,10 +7,10 @@ import { createContext } from "react";
 export const Appcontext = createContext();
 
 function App() {
-  const [home, useHome] = useState();
+  const [home, useHome] = useState(false);
 
   return (
-    <Appcontext.Provider value={(home, useHome)}>
+    <Appcontext.Provider value={{ home, useHome }}>
       <div className="flex items-center px-8 justify-center">
         <div className="max-w-screen-md w-full">
           <Hero />
