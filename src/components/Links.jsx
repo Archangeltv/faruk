@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { Appcontext } from "../App";
+import { Link } from "react-router-dom";
 
 function Links() {
   const { home, useHome, toggle } = useContext(Appcontext);
@@ -14,7 +15,9 @@ function Links() {
           useHome(false);
         }}
       >
-        Portfolio
+        <Link className="w-full" to="/">
+          Portfolio
+        </Link>
       </button>
       <button
         className={`flex h-[45px] md:h-[80px] ${
@@ -24,7 +27,9 @@ function Links() {
           useHome(true);
         }}
       >
-        Skills
+        <Link className="w-full" to="/skills">
+          Skills
+        </Link>
       </button>
     </div>
   );
