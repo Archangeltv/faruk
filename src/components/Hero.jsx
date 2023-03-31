@@ -11,8 +11,10 @@ function Hero() {
           </div>
         </div>
         <div className="h-auto flex gap-4 flex-col items-center md:items-start justify-center ">
-          <h1 className=" text-[#F1F2F4] text-5xl font-medium ">Musa Faruk</h1>
-          <p className=" text-[#A3ABB2] text-2xl ">Ui/Ux Designer</p>
+          <h1 className=" text-[#F1F2F4] md:5xl text-3xl font-medium ">
+            Musa Faruk
+          </h1>
+          <p className=" text-[#A3ABB2] text-xl md:text-2xl ">Ui/Ux Designer</p>
           <div className="flex text-[#A3ABB2] gap-8 text-2xl">
             <BsGithub />
             <BsTwitter />
