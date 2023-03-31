@@ -6,7 +6,7 @@ function Links() {
   const { home, useHome, toggle } = useContext(Appcontext);
 
   return (
-    <div className="w-full bg-[#171F26] text-[#A3ABB2] flex items-center justify-center gap-10 px-5 py-2 my-8 rounded">
+    <div className="w-full bg-[#171F26] text-[#A3ABB2] flex items-center justify-center gap-10 px-5 py-2 mt-8 rounded">
       <button
         className={`flex h-[45px] md:h-[80px] ${
           home ? "bg-transparent" : "bg-[#0c151d]"
