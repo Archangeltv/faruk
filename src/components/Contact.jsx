@@ -2,7 +2,7 @@ import { BsGithub, BsTwitter, BsWhatsapp } from "react-icons/bs";
 
 const Contact = () => {
   return (
-    <div className="w-full items-center justify-center text-[#A3ABB2] flex-col flex gap-3 my-10">
+    <div className="w-full items-center text-centers justify-center text-[#A3ABB2] flex-col flex gap-3 my-10">
       <h2>Hire me for your next design work.</h2>
       <p>I am also available for collaborations and internships.</p>
       <div>
