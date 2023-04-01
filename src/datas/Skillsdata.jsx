@@ -16,6 +16,18 @@ const SkillsData = [
     id: 5,
     text: "Figma",
   },
+  {
+    id: 6,
+    text: "Wireframing",
+  },
+  {
+    id: 7,
+    text: "Problem Solving",
+  },
+  {
+    id: 8,
+    text: "Prototyping",
+  },
 ];
 
 export default SkillsData;
