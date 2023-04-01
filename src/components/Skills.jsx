@@ -1,7 +1,17 @@
+import SkillsData from "../datas/Skillsdata";
+
 function Skills() {
   return (
     <div>
-      <h1>Hello</h1>
+      <ul className="text-[#A3ABB2] text-center">
+        {SkillsData.map((data) => {
+          return (
+            <li key={data.id} className="my-3">
+              {data.text}
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }

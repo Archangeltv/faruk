@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Hero from "./components/Hero";
 import { Second } from "./components/Second";
 import Button from "./components/Buttons";
@@ -8,8 +8,13 @@ export const Appcontext = createContext();
 import { Routes, Route } from "react-router-dom";
 import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
 
 function App() {
+  useEffect(() => {
+    window.location.pathname === "/skills" ? useHome(true) : useHome(false);
+  }, []);
+
   const [home, useHome] = useState(false);
 
   return (
@@ -21,10 +26,13 @@ function App() {
           <Button />
           <Links />
         </div>
-        <Routes>
-          <Route path="/" element={<Portfolio />} />
-          <Route path="/skills" element={<Skills />} />
-        </Routes>
+        <div className="max-w-screen-md w-full">
+          <Routes>
+            <Route path="/" element={<Portfolio />} />
+            <Route path="/skills" element={<Skills />} />
+          </Routes>
+          <Contact />
+        </div>
       </div>
     </Appcontext.Provider>
   );
