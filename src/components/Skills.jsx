@@ -6,7 +6,11 @@ function Skills() {
       <ul className="text-[#A3ABB2] text-center">
         {SkillsData.map((data) => {
           return (
-            <li key={data.id} className="my-3">
+            <li
+              key={data.id}
+              className="my-3
+            "
+            >
               {data.text}
             </li>
           );
